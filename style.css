@@ -6,17 +6,12 @@
     --dkblue: #0d314b;
     --plum: #4b0d49;
     --hotmag: #ff17e4;
-    --aqua: #86fbfb;
-    /* --white: #f7f8fa; */
     --cream: #F1F7ED;
     --magenta: #e50ba0;
-    --yelow: #faa916;
+    --yellow: #faa916;
     --maroon: #B33951;
     --red: #EB5160;
-    --green: #cbff8c;
     --font-size: 1.3rem;
-    --mono: "Oxygen mono", monospace;
-    --sans: Oxygen, sans-serif;
     --space: 'Space Mono', monospace;
     --roboto: 'Roboto', sans-serif;
     --poppins: 'Poppins', sans-serif;
@@ -42,10 +37,15 @@ body  {
 }
 
 /* navbar start */
+
+.nav-container {
+    background: linear-gradient(0deg, rgba(10,10,10,1) 63%, rgba(40,17,103,0.821187850140056) 90%);
+}
 nav {
     font-family: var(--roboto);
     font-size: 90%;
     padding: 1rem;
+    
 }
 
 nav h3 a {
@@ -87,8 +87,8 @@ nav [class*="fa-"] {
 .button {
     background-color: var(--maroon);
     color: var(--cream);
-    padding: 0.3rem;
-    border-radius: 2px;
+    padding: 10px;
+    border-radius: 10px;
     box-shadow: .5px .5px 10px 1px rgba(229, 83, 83, 0.8);
 }
 
@@ -124,7 +124,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* intro styles */ 
+/* start of intro */ 
 
 #intro .mini-about {
     font-size: 45px;
@@ -148,22 +148,126 @@ a:hover {
     font-family: var(--sans);
     font-size: 64px;
     display: block;
-    color: var(--yelow);
+    color: var(--yellow);
 }
 
 #intro h2 {
     font-size: 4rem;
 }
+/* end of intro section*/
 
-/* contact-me section */
-.section-container {
-    /* background-color: #371596; */
-    color: var(--cream);
-    padding: 3rem 0;
-    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(55,21,150,0.7091430322128851) 85%);
+/* start of projects */
+
+#projects {
+    padding: 64px 16px;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+    color: var(--yellow);
+    font-size: 2rem;
     
 }
 
+#projects h4 {
+    margin: 0px;
+    
+}
+
+.project-desc {
+    background-color: var(--secondblack);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    font-size: 18px;
+    gap: 50px;
+}
+
+#projects img {
+    margin: 2rem 0 4rem 0;
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.article-padding {
+    padding-top: 60px;
+}
+
+@media (min-width: 800px) {
+    #projects {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    article {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1rem;
+    }
+    img {
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+    .project-text {
+        grid-column: 4/11;
+        grid-row: 1/2;
+        order: 1;
+        text-align: right;
+    }
+    #projects ul {
+        justify-content: flex-end;
+    }
+    .tech{
+        text-align: right;
+        padding-right: 133px;
+    }
+
+    .reverse img {
+        grid-column: 6/11;
+        grid-row: 1/2;
+       
+    }
+    .reverse .project-text {
+        order: 2;
+        grid-column: 1/7;
+       
+        text-align: left;
+    }
+
+    #projects .reverse ul {
+        justify-content: flex-start;
+    }
+    .reverse h4.tech {
+        text-align: left;
+        
+    }
+
+}
+/* end of projects */
+
+/* start of contact-me section */
+.section-container {
+    color: var(--cream);
+    padding: 3rem 0;
+    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(55,21,150,0.7091430322128851) 95%);
+    
+}
 
 .contact-me {
     width: 400px;
@@ -174,6 +278,8 @@ a:hover {
 .email{
     margin-top: 10px;
     margin-bottom: 0;
+    text-decoration: none;
+    font-size: 24px;
 }
 /* end of  contact-me */
 
@@ -182,7 +288,7 @@ a:hover {
 footer {
     padding: 3rem 0;
     text-align: center;
-    background: linear-gradient(0deg, rgba(10,10,10,1) 19%, rgba(55,21,150,0.7091430322128851) 85%);
+    background: linear-gradient(0deg, rgba(10,10,10,1) 19%, rgba(55,21,150,0.7091430322128851) 100%);
    
 }
 footer ul {
