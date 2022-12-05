@@ -1,7 +1,8 @@
 /* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 :root {
-    /* --black: #171321; */
+    
     --black: #0a0a0a;
+    --secondblack: #171321;
     --dkblue: #0d314b;
     --plum: #4b0d49;
     --hotmag: #ff17e4;
@@ -127,13 +128,18 @@ a:hover {
 }
 
 /* intro styles */ 
+
 #intro .mini-about {
     font-size: 45px;
     margin: 0;
 }
 
 #intro {
-    padding-bottom: 150px;
+    /* top, right, bot, left */
+    padding: 65px 16px 160px 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
 }
 
 #intro p {
@@ -153,6 +159,12 @@ a:hover {
 }
 
 /* contact-me section */
+.section-container {
+    background-color: #13123b;
+    color: var(--cream);
+    padding: 3rem 0;
+}
+
 .contact-me {
     width: 400px;
     text-align: center;
@@ -161,6 +173,7 @@ a:hover {
 
 .email{
     margin-top: 10px;
+    margin-bottom: 0;
 }
 /* end of  contact-me */
 
