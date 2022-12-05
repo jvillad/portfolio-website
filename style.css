@@ -1,0 +1,195 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    /* --black: #171321; */
+    --black: #0a0a0a;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --aqua: #86fbfb;
+    /* --white: #f7f8fa; */
+    --cream: #F1F7ED;
+    --magenta: #e50ba0;
+    --yelow: #faa916;
+    --maroon: #B33951;
+    --red: #EB5160;
+    --green: #cbff8c;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+    --space: 'Space Mono', monospace;
+    --roboto: 'Roboto', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body  {
+    padding: 0;
+    margin: 0;
+    font-family: var(--poppins);
+    background-color: var(--black);
+    color: var(--cream);
+    font-size: var(--font-size);
+}
+
+/* navbar start */
+nav {
+    font-family: var(--roboto);
+    font-size: 90%;
+    padding: 1rem;
+    
+    
+}
+
+nav h3 a {
+    font-family: var(--poppins);
+   
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+
+    text-decoration: none;
+    display: block;
+    color: var(--cream);
+}
+
+nav a:hover {
+    color: var(--maroon);
+}
+
+
+nav [class*="fa-"] {
+    font-size: 160%;
+}
+
+.button {
+    background-color: var(--maroon);
+    color: var(--cream);
+    padding: 0.3rem;
+    border-radius: 2px;
+    box-shadow: .5px .5px 10px 1px rgba(229, 83, 83, 0.8);
+}
+
+.button:hover {
+    color: var(--black)
+}
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+/* end of navbar */
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--red);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--hotmag);
+    text-decoration: none;
+}
+
+/* intro styles */ 
+#intro .mini-about {
+    font-size: 45px;
+    margin: 0;
+}
+
+#intro {
+    padding-bottom: 150px;
+}
+
+#intro p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.name span {
+    font-family: var(--sans);
+    font-size: 64px;
+    display: block;
+    color: var(--yelow);
+}
+
+#intro h2 {
+    font-size: 4rem;
+}
+
+/* contact-me section */
+.contact-me {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.email{
+    margin-top: 10px;
+}
+/* end of  contact-me */
+
+
+/* start of footer */
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5rem;
+} 
+
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+/* end of footer */
