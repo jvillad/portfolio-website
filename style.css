@@ -1,13 +1,10 @@
-/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+/* all colors and font */
 :root {
     
     --black: #0a0a0a;
     --secondblack: #171321;
-    --dkblue: #0d314b;
-    --plum: #4b0d49;
     --hotmag: #ff17e4;
     --cream: #F1F7ED;
-    --magenta: #e50ba0;
     --yellow: #faa916;
     --maroon: #B33951;
     --red: #EB5160;
@@ -17,7 +14,6 @@
     --poppins: 'Poppins', sans-serif;
 }
 
-/* border box model: https://css-tricks.com/box-sizing/ */
 html {
     box-sizing: border-box;
 }
@@ -35,7 +31,6 @@ body  {
     color: var(--cream);
     font-size: var(--font-size);
 }
-
 /* navbar start */
 
 .nav-container {
@@ -170,18 +165,16 @@ a:hover {
 #projects h3 {
     color: var(--yellow);
     font-size: 2rem;
-    
 }
 
 #projects h4 {
     margin: 0px;
-    
 }
 
 .project-desc {
-    background-color: var(--secondblack);
-    padding: 8px;
-    border-radius: 5px;
+    background: radial-gradient(circle, rgba(23,19,33,1) 60%, rgba(10,10,10,0.7651654411764706) 100%);
+    padding: 8px 3px 8px 3px;
+    border-radius: 10px;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -199,7 +192,7 @@ a:hover {
 
 #projects img {
     margin: 2rem 0 4rem 0;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 600px;
     height: 400px;
     max-width: 100%;
@@ -225,7 +218,7 @@ a:hover {
         grid-row: 1/2;
     }
     .project-text {
-        grid-column: 4/11;
+        grid-column: 5/11;
         grid-row: 1/2;
         order: 1;
         text-align: right;
@@ -246,7 +239,6 @@ a:hover {
     .reverse .project-text {
         order: 2;
         grid-column: 1/7;
-       
         text-align: left;
     }
 
@@ -266,7 +258,6 @@ a:hover {
     color: var(--cream);
     padding: 3rem 0;
     background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(55,21,150,0.7091430322128851) 95%);
-    
 }
 
 .contact-me {
