@@ -43,8 +43,9 @@ nav {
     
 }
 
-nav h3 a {
-    font-family: var(--poppins);
+nav a h3 {
+    font-family: var(--roboto);
+    font-weight: 400;
 }
 
 nav ul {
@@ -111,7 +112,7 @@ h1, h2, h3 {
 
 a {
     color: var(--red);
-    font-weight: bold;
+  
 }
 
 a:hover {
@@ -195,6 +196,7 @@ a:hover {
     border-radius: 15px;
     width: 600px;
     height: 400px;
+    /* height: auto;    */
     max-width: 100%;
     max-height: 100%;
 }
@@ -212,11 +214,13 @@ a:hover {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         gap: 1rem;
+        margin-top: 100px;
     }
     img {
         grid-column: 1/6;
         grid-row: 1/2;
     }
+    
     .project-text {
         grid-column: 5/11;
         grid-row: 1/2;
@@ -234,7 +238,6 @@ a:hover {
     .reverse img {
         grid-column: 6/11;
         grid-row: 1/2;
-       
     }
     .reverse .project-text {
         order: 2;
@@ -257,7 +260,7 @@ a:hover {
 .section-container {
     color: var(--cream);
     padding: 3rem 0;
-    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(55,21,150,0.7091430322128851) 95%);
+    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(38, 12, 110, 0.709) 95%);
 }
 
 .contact-me {
@@ -279,9 +282,14 @@ a:hover {
 footer {
     padding: 3rem 0;
     text-align: center;
-    background: linear-gradient(0deg, rgba(10,10,10,1) 19%, rgba(55,21,150,0.7091430322128851) 100%);
+    background: linear-gradient(0deg, rgba(10,10,10,1) 19%, rgba(38,12,110,0.709) 100%);
    
 }
+
+.footer-name, .footer-title, footer p {
+    font-size: 16px;
+}
+
 footer ul {
     list-style-type: none;
     padding: 0;
