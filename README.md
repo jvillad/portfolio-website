@@ -1,4 +1,4 @@
-<b>Personal Porfolio Design 👋🏼</b>
+<b>Personal Porfolio Design (..In progress)👋🏼</b>
 
 A prototype of my personal website. Designed using HTML, CSS and Javascript.
 Site content to showcase my projects, skills, and tools that I am familiar with. 
