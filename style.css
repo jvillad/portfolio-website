@@ -31,8 +31,8 @@ body  {
     color: var(--cream);
     font-size: var(--font-size);
 }
-/* navbar start */
 
+/* navbar start */
 .nav-container {
     background: linear-gradient(0deg, rgba(10,10,10,1) 63%, rgba(40,17,103,0.821187850140056) 90%);
 }
@@ -104,12 +104,75 @@ nav [class*="fa-"] {
         margin-right: auto;
     }
 }
-/* end of navbar */
 
-h1, h2, h3 {
-    margin: 0;
+.hamburger {
+    display: none;
+    cursor: pointer;
 }
 
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--cream);
+}
+
+@media(max-width: 390px) {
+    .nav-bar {
+        min-height: 70px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        background: linear-gradient(0deg, rgba(10,10,10,1) 63%, rgba(40,17,103,0.821187850140056) 90%);
+    }
+    .hamburger {
+        display: block;
+
+    }
+    .hamburger.active {
+        background-color: var(--black);
+        position: fixed;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: var(--red);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: var(--red);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -200%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: var(--black);
+        padding: 100px;
+    }
+
+    .nav-menu li {
+        margin: 20px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        position: fixed;
+    }
+}
 a {
     color: var(--red);
   
@@ -119,8 +182,12 @@ a:hover {
     color: var(--hotmag);
     text-decoration: none;
 }
+/* end of navbar */
 
 /* start of intro */ 
+h1, h2, h3 {
+    margin: 0;
+}
 
 #intro .mini-about {
     font-size: 45px;
@@ -145,6 +212,12 @@ a:hover {
     font-size: 64px;
     display: block;
     color: var(--yellow);
+}
+
+@media(max-width: 768px) {
+    .name span {
+        font-size: 52px;
+    }
 }
 
 #intro h2 {
