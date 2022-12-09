@@ -65,7 +65,6 @@ nav li:first-child {
 }
 
 nav a {
-
     text-decoration: none;
     display: block;
     color: var(--cream);
@@ -77,7 +76,7 @@ nav a:hover {
 
 
 nav [class*="fa-"] {
-    font-size: 160%;
+    font-size: 200%;
 }
 
 .button {
@@ -134,6 +133,13 @@ nav [class*="fa-"] {
         display: block;
 
     }
+
+    .bar:nth-child(2) {
+        width: 15px;
+    }
+    
+   
+     
     .hamburger.active {
         background-color: var(--black);
         position: fixed;
@@ -171,6 +177,12 @@ nav [class*="fa-"] {
     .nav-menu.active {
         left: 0;
         position: fixed;
+      
+    }
+    
+    html,body {
+        
+        overflow-x: hidden; 
     }
 }
 a {
