@@ -12,7 +12,6 @@ Tools and Guide:
 - JavaScript
 - HTML
 - CSS
-- Guided by [Arnelle](https://github.com/arnellebalane) 😁
 
 [Site link](https://jvill.netlify.app/)
 
